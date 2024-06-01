@@ -1,0 +1,206 @@
+.main{
+    
+    
+    
+    transform: translate(50,50);
+    
+    display: flex;
+    justify-content: center;
+    
+}
+
+.container{
+    padding: 0;
+    margin: 0;
+    color: whitesmoke;
+    height: 100vh;
+    width: 100vw;
+}
+
+.block{
+    height: 380px;
+    width: 500px;
+    background-color: rgba(54, 73, 82, 0.3);
+    border-radius: 20px;
+    border: 1px solid whitesmoke;
+    box-shadow:0 0 20px 10px rgb(66, 187, 215);
+    position: absolute;
+    top: 28%;
+    left: 33%;
+}
+
+
+.uname{
+    padding: 20px;
+    margin: 30px;
+    padding-top: 50px;
+}
+
+.username{
+    margin: 10px;
+    padding: 5px;
+    border: transparent;
+    background: transparent;
+    border-bottom: 1px solid whitesmoke;
+    width: 60%;
+    color: whitesmoke;
+}
+
+
+
+.password{
+  
+    padding: 5px;
+    border: transparent;
+    background: transparent;
+    border-bottom: 1px solid whitesmoke;
+    width: 50%;
+    color: whitesmoke;
+    margin-left: 10px;
+}
+
+
+.submit{
+    position: absolute;
+    bottom: 10%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    border: 1px solid whitesmoke;
+    right: 40%;
+    width: 80px;
+    transition: 300ms;
+}
+
+.submit:hover{
+    background-color: black;
+    box-shadow: 0 0 20px 10px rgb(66, 187, 215);
+    color: whitesmoke;
+    transition: 300ms;
+    transform: scale(1.2);
+}
+
+.title{
+    color: whitesmoke; 
+    z-index: 999;
+    position:fixed;
+    top: 0;
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    padding: 10px;
+ }
+ 
+ .app{
+    background-color: rgb(255, 255, 255,0.2);
+    padding: 20px;
+    font-size: 25px;
+     width: 80%;
+     color: whitesmoke;
+     border-radius: 30px;
+     box-shadow: 0 0 20px 10px rgb(66, 187, 215);
+
+ }
+ 
+
+ .submain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+ }
+
+ .logo{
+    height:6%;
+    width: 6%;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+ }
+
+ .navbar{
+   
+    display: flex;
+    justify-content: right;
+    position: absolute;
+    top: 5%;
+    width: 98%;
+}
+
+
+ .button{
+    background-color: transparent;
+    color: whitesmoke;
+    border: transparent;
+    margin: 20px;
+    transition: 300ms;
+    padding: 5px;
+    margin-top: 90px;
+ }
+
+ 
+ .button:hover{
+    transform: scale(1.2);
+    border-radius: 20px;
+    
+    color:rgb(66, 187,215);
+    border: 1px solid rgb(66, 187, 215);
+    transition: 300ms;
+} 
+ 
+
+h1{
+    height: fit-content;
+    width: fit-content;
+    border-radius: 30px;
+    border: 1px solid whitesmoke;
+    padding: 10px;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+
+    /* .pass_input{
+        display: flex;
+        width: fit-content;
+    } */
+
+
+
+/* .pass{
+    display: flex;
+    width: fit-content;
+} */
+
+
+
+.eye{
+    background: transparent;
+    border: transparent;
+    border-bottom: 1px solid whitesmoke;
+
+}
+
+.show{
+    display: flex;
+    position: absolute;
+    left: 11%;
+    margin: 10px;
+}
+
+.dull-admin{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    filter: brightness(40%);
+}
+
+#show_password{
+    margin: 10px;
+}

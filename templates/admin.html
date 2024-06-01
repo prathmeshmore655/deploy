@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/admin.css">
+</head>
+<body class="container">
+
+    <img src="static/login-dull.jpg" alt="" class="dull-admin">
+
+    <div class="dull-block">
+    <div class="header">
+    <h1>Admin Login</h1>
+</div>
+
+   
+    <div class="navbar">
+        <a href="home1">
+        <button class="button">Home</button>
+    </a>
+    <a href="apply_for_concession">
+        <button class="button">Application Form</button>
+    </a>
+    </div>
+
+    <form>
+
+        <div class="main">
+            <div class="block">
+                <center>
+                   
+                    <div class="content">
+                        <div class="uname">
+                            <label for="">Username :</label>
+                            <input type="text" class="username" id="a" required>
+                        </div>
+                        <div class="pass">
+                            <label for="">Password :</label>
+                            <input type="password" class="password" id="b" required>
+                           <br>
+                           <br>
+                           <div class="show">
+                           <input type="checkbox" name="" id="show_password" onclick="show_password()"><h6>Show Password</h6>
+                        </div>
+                    </div>
+                    </div>
+                    <br>
+                    <br>
+                    <button type="button" class="submit" onclick="login_admin()">
+                        Login
+                    </button>
+                </center>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+</body>
+
+<script src="static/admin.js">
+      
+</script>
+</html>

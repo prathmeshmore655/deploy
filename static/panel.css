@@ -1,0 +1,187 @@
+body{
+    background-color: black;
+    color: white;
+    padding: 20px;
+  
+}
+
+.theme{
+    position: absolute;
+    top: 1%;
+    left: 0%;
+    background-color: transparent;
+    color: whitesmoke;
+    border: transparent;
+}
+
+.theme:hover{
+    border-bottom: 1px solid whitesmoke;
+}
+
+
+th{
+    
+   padding: 5px;
+}
+
+td{
+    
+    padding: 10px;
+}
+
+.popup{
+    display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 1px solid #ccc;
+            background-color: rgba(112, 108, 108, 0.5);
+            padding: 20px;
+            z-index: 9999;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            color: rgb(249, 249, 249);
+            border-radius: 20px;
+            height: 100vh;
+            width: 100vw;
+            padding: 30px;
+            padding-top: 150px;
+
+}
+
+
+.content{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.receipt{
+    height: 400px;
+    width: 380px;
+    transition: 300ms;
+}
+
+.submain{
+    
+    background-color: black;
+    height: 550px;
+    width: 1000px;
+    border-radius: 20px;
+    position: absolute;
+    left: 13%;
+
+
+   
+}
+
+.part1{
+    border-right: 1px solid whitesmoke;
+    padding-right: 50px;
+    padding-top: 30px;
+}
+
+
+.sign{
+    height: 50px;
+    width: 100px;
+    margin-left: 40px;
+    transition: 300ms;
+}
+
+.sign:hover{
+    transform: scale(1.8);
+    transition: 300ms;
+}
+
+.print{
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: transparent;
+    border:1px solid whitesmoke;
+    color: whitesmoke;
+    margin: 20px;
+    transition: 300ms;
+}
+.print:hover{
+    background-color: black;
+    color: white;
+    box-shadow:0 0 20px 10px rgb(66, 187, 215);
+    transition: 300ms;
+}
+
+
+
+.details{
+   
+    padding: 7px;
+    border-radius: 20px;
+    background-color: transparent;
+    border:1px solid whitesmoke;
+    color: whitesmoke;
+    margin: 5px;
+    transition: 300ms;   
+}
+
+.details:hover{
+    background-color: black;
+    color: white;
+    box-shadow:0 0 20px 10px rgb(66, 187, 215);
+    transition: 300ms;
+}
+
+h2{
+    width: 200px;
+    border: transparent;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: black;
+    height: 30px;
+    border: 1px solid whitesmoke;
+}
+
+
+#query{
+    background: transparent;
+    border: transparent;
+    border-bottom: 1px solid whitesmoke;
+    padding: 5px;
+    color: whitesmoke;
+    background-color: rgba(91, 89, 89, 0.5);
+}
+
+.receipt:hover{
+    transform: scale(1.5);
+    animation: 300ms;
+}
+
+.search{
+    display: flex;
+    justify-content: space-between;
+}
+
+.delete{
+    background: transparent;
+    border: transparent;
+    border-bottom: 1px solid whitesmoke;
+    padding: 5px;
+    color: whitesmoke;
+    background-color: rgba(91, 89, 89, 0.5);
+    margin-right: 10px;
+}
+
+.button{
+    background-color: black;
+    border-radius: 20px;
+    color: whitesmoke;
+    border:1px solid whitesmoke;
+    padding: 5px;
+    transition: 300ms;
+}
+
+.button:hover{
+    transform: scale(1.1);
+    transition: 300ms;
+    box-shadow:0 0 20px 10px rgb(66, 187, 215);
+}

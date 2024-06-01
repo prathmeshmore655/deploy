@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="stylesheet" href="static/result.css">
+</head>
+<style>
+    .container{
+        background-color: black;
+    }
+
+    .pull{
+        background-color: white;
+    }
+</style>
+<body class="container">
+    
+    <button id="click">
+        Click Me
+    </button>
+
+    <script>
+        function mode(){
+            var background = document.getElementsByClassName('container')[0];
+            background.classList.toggle('pull');
+        }
+
+        function light(){
+            var button = document.getElementById('click');
+            button.addEventListener('click', mode);
+        }
+
+        light(); // Call the light function to initialize the event listener.
+    </script>
+</body>
+</html>

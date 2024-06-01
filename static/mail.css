@@ -1,0 +1,80 @@
+.container{
+    background-color: black;
+    color: whitesmoke;
+}
+
+button{ background-color: transparent;
+    border:transparent;
+    transition: 300ms;
+    color: whitesmoke;
+   
+    padding: 8px;
+}
+
+
+button:hover{
+    transform: scale(1.1);
+    border-radius: 20px;
+    color: whitesmoke;
+    transition: 300ms;
+    border: 1px solid  rgb(66, 187, 215);
+    color: rgb(66, 187, 215);
+}
+
+.navbar{
+    display: flex;
+    justify-content: right;
+    margin: 20px;
+}
+
+h1{
+    border: 1px solid whitesmoke;
+    height: fit-content;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.block{
+    border: 1px solid whitesmoke;
+    height: 250px;
+    width: 400px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+input{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: transparent;
+    border-bottom: 1px solid whitesmoke;
+    width: 70%;
+    color: whitesmoke;
+}
+
+label{
+
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    transition: 100ms;
+}
+
+
+
+.submit{
+    border: 1px solid whitesmoke;
+    border-radius: 20px;
+    width: 80px;
+}

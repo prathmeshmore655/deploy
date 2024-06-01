@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Panel</title>
+    <link rel="stylesheet" href="static/panel.css">
+</head>
+
+<body class="container">
+    <div class="main">
+        <form method="post">
+            {% csrf_token %}
+        
+                <center>
+            <div class="led">
+                <h2>
+                    Admin Panel
+                </h2>
+            </div>
+            </center>
+        
+                <div class="search">
+                    <input type="text" name="query" id="query" placeholder="Search" onkeyup="debouncedSearch()">
+                </div>
+            <br>
+        </form>
+        <table border="1" class="table">
+            <thead>
+                <tr>
+                    <th>Stu_Id</th>
+                    <th>First name</th>
+                    <th>Father name</th>
+                    <th>Surname</th>
+                    <th>Mother Name</th>
+                    <th>DOB</th>
+                    <th>Registeration No</th>
+                    <th>Year</th>
+                    <th>Branch</th>
+                    <th>Staring Point</th>
+                    <th>Destination Point</th>
+                    <th>Travelling Class</th>
+                    <th>Action</th>
+                    <th>Submit Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for n in form %}
+                <tr>
+                    <td>{{ n.pk }}</td>
+                    <td>{{ n.name }}</td>
+                    <td>{{ n.father }}</td>
+                    <td>{{ n.surname }}</td>
+                    <td>{{ n.mother }}</td>
+                    <td>{{ n.dob }}</td>
+                    <td>{{ n.registration }}</td>
+                    <td>{{ n.year }}</td>
+                    <td>{{ n.branch }}</td>
+                    <td>{{ n.start }}</td>
+                    <td>{{ n.end }}</td>
+                    <td>{{ n.clas }}</td>
+                    <td>
+                        <button class="details" onclick="showDetails('{{ n.id }}')">Show</button>
+                    </td>
+                    <td>
+                        {{ n.submit_time }}
+                    </td>
+                </tr>
+                <div class="popup" id="details_{{ n.id }}" onclick="closepopup()">
+
+                    <div class="submain">
+            
+                    <div class="content">
+                        <div class="part1">
+                    <label for="">1] Full Name :</label>
+                    {{ n.name }}     {{ n.father }}     {{ n.surname }}
+
+                    <br>
+                    <br>
+
+                    <div class="inner">
+                        <div>
+                    <label for="">2] Mother Name :</label>
+                    {{ n.mother }}
+                </div>
+                <br>
+                    <div>
+                    <label for="">3] Date Of Birth :</label>
+                    {{ n.dob }}
+                    </div>
+                        <br>
+                </div>
+                    <div class="inner">
+                        <div>
+                    <label for="">4] Registeration No.</label>
+                    {{ n.registration }}
+                </div>
+                <br>
+                <div>
+                    <label for="">5] Educational Year :</label>
+                    {{ n.year }}
+                </div>
+                <br>
+                </div>
+                <div>
+                    <label for="">6] Branch :</label>
+                    {{ n.branch }}
+                </div>
+                <br>
+                <div>
+                    <label for="">7] Traveling From :</label>
+                    {{ n.start }}
+                </div>
+                <br>
+                <div>
+                    <label for="">8] Traveling To :</label>
+                    {{ n.end }}
+                </div>
+                <br>
+                <div>
+                    <label for="">9] Traveling Class :</label>
+                    {{ n.clas }}
+                </div>
+            <br>
+                <div style="display: flex;">
+                    <label for="">10] Signature :</label>
+
+                    <img src="{{ n.signature.url }}" alt="Signature" class="sign">
+                </div>
+            </div>
+                <div class="part2">
+                    <label for="">11] Receipt :</label>
+                    <br>
+                    <br>
+                    <img src="{{ n.receipt.url }}" alt="Receipt" class="receipt">
+
+                    
+                   
+                </div>
+                
+                
+
+            </div>
+            
+            
+            
+            
+            </div>
+        
+        </div>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+<script src="static/staff.js">
+
+    </script>
+</html>

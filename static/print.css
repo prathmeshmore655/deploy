@@ -1,0 +1,167 @@
+.container{
+    background-color: black;
+    color: whitesmoke;
+}
+
+.sign{
+    height: 50px;
+    width: 100px;
+}
+
+
+
+h1{
+    border: 1px solid whitesmoke;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.block{
+    display: flex;
+    justify-content: center;
+    
+    
+
+}
+
+td{
+    padding: 5px;
+    margin: 5px;
+    background-color: black;
+
+}
+
+
+.print{
+    margin: 10px;
+    padding: 10px;
+    background-color: black;
+    color: whitesmoke;
+    transition: 300ms;
+    border: transparent;
+}
+
+.print:hover{
+    transition: 300ms;
+    transform: scale(1.1);
+    border: 1px solid aqua;
+    color: aqua;
+    border-radius: 20px;
+}
+
+.button{
+    margin: 20px;
+    display: flex;
+    justify-content: right;
+
+}
+
+.table{
+    border-radius: 10px;
+    padding: 5px;
+
+}
+
+
+.send_email{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: black;
+    color: whitesmoke;
+    transition: 300ms;
+    border: transparent;
+}
+
+.send_email:hover{
+    transition: 300ms;
+    transform: scale(1.1);
+    border: 1px solid aqua;
+    color: aqua;
+   
+}
+
+.receipt{
+    border: 1px solid grey;
+    width: 70%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.struct{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.condn{
+    margin: 10px;
+}
+
+h2{
+    margin-bottom: 30px;
+}
+
+#receipt{
+    display: flex;
+    justify-content: right;
+    padding: 10px;
+}
+
+.name{
+    border-bottom:1px solid grey;
+    width: fit-content;
+}
+
+.infotable{
+    border: 1px solid grey;
+   margin-top: 20px;
+}
+
+
+.row1{
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid grey;
+}
+
+.row2{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+}
+
+.block1{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 10px;
+    border-right: 1px solid grey;
+}
+
+.block2{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 10px;
+    border-right: 1px solid grey;
+}
+
+h3{
+    margin: 10px;
+}
+
+
+.stamp{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.stamp2{
+    margin: 20px;
+}

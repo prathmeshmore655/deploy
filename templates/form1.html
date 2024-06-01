@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="static/form1.css">
+</head>
+<body class="container">
+
+    <img src="static/form-dull.jpg" alt="" class="form-dull">
+    <div class="form_container">
+    <center>
+    <div class="title">
+        <h1>
+            Application Form
+        </h1>
+        </div>
+    </center>
+    
+        <div class="navbar">
+            <a href="home1">
+                <button class="home">
+                    Home
+            </button>
+        </a>
+
+            <a href="login">
+                <button class="login">
+                    Admin Login
+            </button></a>
+            <a href="Instructions">
+            <button class="instructions">Instructions</button>
+        </a>
+        <a href="feedback">    
+        <button class="feedback">Feedback</button>
+    </a>    
+    </div>
+    
+
+
+<br>
+<br>
+<br>
+
+<center>
+<span>
+    {% for n in message %}
+    <div class="error">
+        {{ n }}
+        <h1>hello</h1>
+    </div>
+    {% endfor %}
+
+</span>
+    <form method="POST" action="{% url 'savedata' %}" enctype="multipart/form-data">
+        {% csrf_token %}
+        
+        <div class="app">
+           
+      
+            <div class="name">
+            <div class="name1">
+                <label  class="full">Name :</label>
+                <input type="text" placeholder="First Name"  name="name" id="name" class="subname1" required>
+                
+                
+            </div>
+            <div class="name2">
+                <input type="text" placeholder="Middle Name"   name="father" id="father" class="subname2" required>
+                
+            </div>
+            <div class="name3">
+                <input type="text" placeholder="Surname"    name="surname" id="surname" class="subname3" required>
+                
+            </div>
+        </div>
+        <hr>
+        <div class="parent">
+            <div class="mother">
+                <label  class="full2">Mother Name :</label>
+            <input type="text" placeholder="Mother Name"   name="mother"  class="p1" id="mother" required>
+            
+            
+        </div>
+        <div class="date">
+            <label  class="full3">Date Of Birth :</label>
+            <input type="date" placeholder="none"   name="dob"  class="dob" id="dob" required>
+            
+        </div>
+            
+        </div>
+        <div class="details1">
+            <div>
+            <label>
+                Registration No :
+            </label>
+            <input type="text" placeholder="Available on ID card" class="registerno" id="registration" name="registration"  required>
+        </div>
+        <div>
+            <label style="margin-left: 40px;">
+                Fee Receipt :
+            </label>
+            <input type="file" class="rc"  name="receipt" required>
+        </div>
+    </div>
+
+        <div class="details2">
+
+            <div>
+            <label>
+                Academic Year :
+            </label>
+            <select class="year" name="year" required>
+            <option>First Year (F.E.)</option>
+            <option>Second Year (S.E.)</option>
+            <option>Third Year (T.E.)</option>
+            <option>Final Year (B.E.)</option>
+            </select>
+        </div>
+        <div>
+            <label style="margin-left: 20px;">
+                Branch :
+            </label>
+            <select class="branch" name="branch" required>
+                <option>Computer science and Engineering (cse)</option>
+                <option>Computer science and Engineering(AIML)</option>
+                <option>Computer science and Engineering(IOT)</option>
+                <option>Electrical Engineering</option>
+                <option>Mechanical Engineering</option>
+            </select>
+        </div>
+        </div>
+        <hr>
+        <div class="info">
+            <div>
+            <label>
+                Traveling From :
+            </label>
+            <input type="text" placeholder="Starting Point" class="subinfo1" name="start" required>
+        </div>
+        <div>
+            <label style="margin-left: 15px;">
+                Traveling To :
+            </label>
+            <input type="text" placeholder="Destination Point " class="subinfo2" name="end" required>
+        </div>
+        </div>
+        <div class="type">
+
+            <div>
+            <label>
+               Choose  Class :
+            </label>
+            <select class="class" name="clas" required>
+                <option>First Class</option>
+                <option>Second Class</option>
+            </select>
+        </div>
+
+        <div>
+            <label style="margin-left: 30px;">Students Signature :</label>
+            <input type="file" class="sign" name="sign" required>
+        </div>
+        </div>
+        <hr>
+        <div style="display: flex; align-items: center;">
+        <label for="">Period :</label>
+        <select name="period" style="margin: 10px;background-color: transparent;border: transparent;color: whitesmoke;border-bottom:1px solid black;padding: 10px;">
+            <option value="Monthly">Monthly</option>
+            <option value="Quarterely">Quarterely(3 months)</option>
+        </select>
+    </div>
+        <hr>
+        <div class="last">
+            <label for="">Email Id :</label>
+            <input type="text" class="email" name="email" placeholder="abc123@gmail.com"  required>
+        </div>
+        <hr>
+        <button class="submit">
+            Submit
+        </button> 
+    </div>
+
+
+  
+</form>
+
+
+</center>
+</div>
+</body>
+<script src="static/form.js">
+    
+</script>
+</html>
+

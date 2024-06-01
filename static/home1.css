@@ -1,0 +1,396 @@
+
+.container{
+    color: black;
+    background-image: linear-gradient(to bottom right,black,white, rgb(8,26,42));
+
+}
+
+.primary{
+   display:flex;
+    margin-top: 20px;
+   margin-left: 250px;
+   flex: 1;
+   overflow-y: auto;
+   justify-content: space-around;
+   
+
+}
+.main{
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    background-image: linear-gradient(to bottom right,black,white, rgb(8,26,42));
+    overflow-y: auto;
+
+}
+
+.h1{
+    color: black;
+   margin: 10px;
+}
+.h2{
+    color: black
+}
+.logo{
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+}
+.title{
+    margin-top: 20px;
+    
+}
+.navbar{
+    display: flex;
+    justify-content: right;
+    padding-top: 10px;
+    background-color: black;
+    height: 30px;
+    border-top: 1.5px solid white;
+    border-bottom: 1.5px solid white;   
+}
+
+
+.pic{
+  
+    height: 250px;
+    width: 350px;
+    border-radius: 20px;
+    border-radius: 30px;
+    transition: 300ms;
+    opacity: 70%;
+    border: 1px solid whitesmoke;
+}
+
+.pic:hover{
+    transform: scale(1.05);
+    transition: 300ms ;
+    box-shadow: 0 0 20px 10px rgb(66,187,215) ;
+    opacity: 100%;
+}
+
+.college{
+    padding: 20px;
+    width: 60%;
+    height:fit-content;
+    margin: 40px;
+    border-radius: 30px;
+    display: flex;
+    background-color: black;
+    transition: 300ms;
+    justify-content: space-around;
+    padding: 20px;
+    align-items: center;
+}
+
+.college:hover{
+   
+    transition: 300ms;
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.402) ;
+    
+}
+
+.circle{
+
+    height:fit-content;
+    width: fit-content;
+    border-radius: 20px;
+    color: white;
+    opacity: 100%;
+    transition: 300ms;
+}
+
+.circle:hover{
+    transform: scale(1.05);
+    transition:300ms;
+}
+.co{
+    
+    padding: 20px;
+    transition: 300ms ease;
+    border: 1px solid whitesmoke;
+    border-radius: 20px;
+    
+}
+.co:hover{
+    box-shadow: 0 0 20px 10px rgb(66, 187, 215);
+    transition: 300ms ease;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    font-weight: 300;
+}
+
+.course{
+    background-color: rgba(26, 24, 24, 0.815);
+    color: white;
+    height: 600px;
+    width: 50%;
+    padding: 20px;
+    border: 2px solid whitesmoke;
+}
+.our{
+    margin-bottom: 10px;    
+}
+
+.block1{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.block2{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+.block3{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+
+
+.p1{
+    height: 60px;
+    width: 60px;
+}
+.p2{
+    height: 60px;
+    width: 60px;
+}
+.p3{
+    height: 60px;
+    width: 60px;
+}
+.p4{
+    height: 60px;
+    width: 60px;
+}
+.p5{
+    height: 60px;
+    width: 60px;
+}
+.p6{
+    height: 60px;
+    width: 60px;
+}
+
+.cse{
+  
+    height: 120px;
+    width: 400px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    transition: 300ms;
+}
+
+.cse:hover{
+    transform: scale(1.05);
+    transition:300ms;
+    box-shadow: 0 0 20px 10px rgb(66, 187, 215);
+}
+.elect{
+   
+    width: 400px;
+    margin: 10px;
+    padding: 10px;
+    height: 120px;
+    border-radius: 20px;
+    transition: 300ms;
+}
+
+.elect:hover{
+    transform: scale(1.05);
+    transition:300ms;
+    box-shadow: 0 0 20px 10px rgb(66, 187, 215);
+}
+
+
+.aids{
+    
+    width: 400px;
+    margin: 10px;
+    padding: 10px;
+    height: 120px;
+    border-radius: 20px;
+    transition: 300ms;
+}
+.aids:hover{
+    transform: scale(1.05);
+    transition:300ms;
+    box-shadow: 0 0 20px 10px rgb(66, 187, 215);
+}
+
+.aiml{
+   
+    width: 400px;
+    margin: 10px;
+    padding: 10px;
+    height: 120px;
+    border-radius: 20px;
+    transition: 300ms;
+}
+.aiml:hover{
+    transform: scale(1.05);
+    transition:300ms;
+    box-shadow: 0 0 20px 10px rgb(66, 187, 215);
+}
+
+.iot{
+    
+    width: 400px;
+    margin: 10px;
+    padding: 10px;
+    height: 120px;
+    border-radius: 20px;
+    transition: 300ms;
+}
+.iot:hover{
+    transform: scale(1.05);
+    transition:300ms;
+    box-shadow: 0 0 20px 10px rgb(66, 187, 215);
+}
+.mech{
+    
+    width: 400px;
+    margin: 10px;
+    padding: 10px;
+    height: 120px;
+    border-radius: 20px;
+    transition: 300ms;
+}
+.mech:hover{
+    transform: scale(1.05);
+    transition:300ms;
+    box-shadow: 0 0 20px 10px rgb(66, 187, 215);
+}
+
+.foot{
+    display: flex;
+    background-color: rgb(12,45,99);
+    color:white;
+    margin-top: 50px;
+    padding: 30px;
+    justify-content: space-around;
+}
+
+.fo{
+    height: 200px;
+    width: 200px;
+    margin-left: 80px;
+    margin-top: 50px;
+
+}
+
+.contact{
+    margin-left: 30px ;
+    width: 600px;
+    margin-top: 50px;
+
+}
+
+
+.map{
+   
+    margin: 20px;
+    margin-top: 30px;
+
+    
+    
+}
+
+button{
+    background: transparent;
+    border-color: transparent;
+    font-weight: 500; 
+    margin-left: 10px;
+    margin-right:10px;   
+    color: white;
+    transition: 300ms;
+    border-radius: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+button:hover{
+    transform:scale(1.2);
+    transition: 300ms;
+    background-color:black;
+    color: white;
+    border-radius: 20px;    
+    box-shadow: 0 0 20px 10px rgb(66, 187, 215);
+}
+
+.slide-container {
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    height: 250px;
+}
+
+.slide-images {
+    display: flex;
+    animation: slide 5s infinite;
+    height: 100%;
+}
+
+
+.slide-images img {
+    border: 2px solid whitesmoke;
+    height: 100%; 
+    object-fit: cover; 
+    transition: 300ms;
+}
+
+.slide-images img:hover{
+    transform: scale(1.2);
+    transition: 300ms;
+}
+
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-25%); }
+    50% { transform: translateX(-50%); }
+    75% { transform: translateX(-75%); }
+    100% { transform: translateX(-100%); }
+}
+
+
+.slider{
+    background-color: rgba(58, 55, 55, 0.481);
+    padding: 10px;
+    
+}
+
+.home-dull{
+    width: 100%;
+    height: 700px;
+    filter: brightness(40%);
+}
+
+.dull-content{
+    position: absolute;
+    top: 50%;
+    color: whitesmoke;
+    width: 30%;
+    padding: 20px;
+}
+
+
+.learn_more{
+    border: 2px solid whitesmoke;
+    position: relative;
+    color: whitesmoke;
+    border-radius: 0;
+    padding: 10px;
+    
+}

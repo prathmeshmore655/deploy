@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt</title>
+    <link rel="stylesheet" href="static/print.css">
+</head>
+<body class="container">
+    
+   
+<center>
+   
+    
+    
+    <div class="button">
+        <button class="print" onclick="print_receipt()">
+            Print
+        </button>
+
+
+        <form action="{% url 'send_receipt' %}" method="post">
+            {% csrf_token %}
+    
+
+        <a href="mail.html">
+        <button class="send_email">
+            Send Mail
+        </button>
+        </a>
+    </div>
+
+
+{% for n in info %}
+
+    
+
+
+
+    <input type="hidden" name="id" value="{{ n.pk }}">
+    
+
+</form>
+</center>
+
+<div class="struct">
+<div class="receipt">
+<center>
+<h2>
+    Central Railway
+</h2>
+</center>
+
+<div class="condn">
+    <div class="receipt_no">
+        <h2 id="receipt">
+        E000{{ n.id }}
+    </h2>
+    </div>
+    <h4>
+        School Certificate to be issued only to Students of not more than 25 years of age.
+    </h4> 
+
+    I hereby certify that <h4>{{ n.name }}  {{ n.father }} {{ n.surname }} </h4> attends this School for the purpose of receiving education, the institution of which I am the Principal/Head Master and according to my belief and from enquiries I have made, is  his/her date of birth as entered in the College Register being <h3> {{ n.dob }} .</h3> He/She is therefore, entitled to the Season Ticket as detailed below at half the full rates charged for adults :-
+
+    
+    <div class="infotable">
+        <div class="row1">
+            <div class="block1">Class</div>
+            <div class="block1">Period</div>
+            <div class="block1">From</div>
+            <div class="block1">To</div>
+            <div class="block1">No. Of SEason Ticket Issued</div>
+        </div>
+        <div class="row2">
+           
+            <div class="block2">{{ n.clas }}</div>
+            <div class="block2">{{ n.period }}</div>
+            <div class="block2">{{ n.start }}</div>
+            <div class="block2">{{ n.end }}</div>
+            <div class="block2"></div>
+        </div>
+</div>
+
+
+
+<div class="stamp">
+<div class="stamp1">
+
+<div style="display: flex;align-items: center;">From  :<h3>  {{ n.start }}  </h3>  To  <h3>  {{ n.end }}  </h3></div>  <br> For the :<h3> {{ n.period }}</h3>
+<div style="display: flex;align-items: center;">Date : <h3 id="date"></h3></div>
+
+</div>
+
+<div class="stamp2">
+
+    <img src="static/stamp.webp" alt="stamp" style="height: 140px;width: 140px;">
+
+</div>
+</div>
+
+
+<hr>
+<div class="footer">
+    Note : This certificate will be valid for three days including the date of issue and if not made use of within that time must be returned by the issued for cancellation.
+    
+    
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+   
+
+
+
+
+
+
+{% endfor %}
+</body>
+
+<script src="static/print.js">
+
+
+</script>
+</html>

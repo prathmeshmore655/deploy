@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback </title>
+    <link rel="stylesheet" href="static/feedback.css">
+</head>
+<body class="container">
+    <img src="static/feedback.jpg" alt="" class="bg">
+
+<form method="POST" action="{% url 'response' %}">
+    {% csrf_token %}
+    <div class="content">
+        <center>
+            <h1>
+                Feedback
+            </h1>
+        </center>
+      <div class="main">
+        <div class="mail">
+            <label for="">Enter Your E-mail :</label>
+            <input type="email" name="f_email" class="a" placeholder="abc123@gmail.com" autofocus required>
+        </div>
+              <br>
+
+            <label for="">Give Your Valuable Feedback TO Us :</label>
+            <br>
+            <textarea class="feedback" name="new" cols="30" rows="8" placeholder="Enter Your Response" required>
+                
+            </textarea>
+            <br>
+            <button class="submit">
+                Submit
+            </button>
+        </div>
+    </div>
+
+</form>
+</body>
+
+</html>

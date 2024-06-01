@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/mail.css">
+</head>
+<body class="container">
+
+    <center>
+    <h1>
+        Receipt
+    </h1>
+</center>
+
+    <div class="navbar">
+        <a href="adminPanel">
+            <button>
+                Admin Panel
+            </button>   
+        </a>
+    </div>
+
+
+    <main>
+        <div class="block">
+
+            {% for n in data %}
+    <form action="{% url 'send' %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        
+
+        <input type="hidden" value="{{ n.id }}" name="main">
+        <label for="">To :</label>
+        <br>
+        
+        <input type="email" name="r_email" value="{{ n.email }}" required>
+        
+        <br>
+        <label for="">Subject :</label>
+        <br>
+        <input type="text" value="Receipt" name="subject">
+        <br>
+        <label for="">Attachment :</label>
+        <br>
+        <input type="file" name="attachment" required>
+        <br>
+    
+        <div class="button">
+
+           
+        <button type="submit" class="submit">Send</button>
+
+
+
+
+    </div>
+    </div>
+    
+</form>
+
+
+{% endfor %}   
+
+    </main>
+
+
+
+</body>
+</html>
